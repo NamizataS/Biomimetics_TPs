@@ -92,10 +92,10 @@ def gol_predator_prey(length=10, width=10, gen=5, lifespan=3, fasting=2):
                     next_grid_fasting[x][y] = 1
                     next_grid_lifespan[x][y] = 1
                     continue
-                if grid[x][y] == 1 and env_sheep < 1 and env_grass == 1:
+                if grid[x][y] == 1 and env_sheep < 1 and env_grass >= 1:
                     next_grid[x][y] = 1
                     next_grid_lifespan[x][y] = grid_lifespan[x][y] + 1
-                    next_grid_fasting[x][y] = grid_fasting[x][y] - 1
+                    next_grid_fasting[x][y] = grid_fasting[x][y] - env_grass
                     continue
                 if grid[x][y] == 1 and env_wolf > 1:
                     next_grid[x][y] = 0
