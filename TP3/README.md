@@ -28,4 +28,4 @@ L'algorithme génétique va suivre les étapes suivantes:
 
 ### Lancement du projet
 Lancer le script tsp.py et se laisser guider.
-Sinon essayer taille de la population à 100, taille de l'élite à 20, taux de mutation à 0.01 et nombre de générations à 500.
+Sinon essayer un nombre de villes à 25, taille de la population à 100, taille de l'élite à 20, taux de mutation à 0.01 et nombre de générations à 500.
